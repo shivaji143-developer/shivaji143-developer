@@ -1,0 +1,205 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    padding: -10px;
+    background-position: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #308ade;
+    color: white;
+    padding: 10px 20px;
+    height: 70px;
+}
+header h1 {
+    margin: 0;
+    text-align: left;
+}
+nav {
+    display: flex;
+    gap: 10px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    background-color: #0960b6;
+    padding: 8px 15px;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: background-color 0.5s;
+    border: 2px solid white;
+}
+nav a:hover {
+    background-color: #000000;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+.form-container {
+    display: none;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #0894ea;
+    border-radius: 5px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(28, 208, 244, 0.986);
+ 
+}
+.form-container.active {
+    display: block;
+}
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+.form-container form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-container form button {
+    padding: 10px;
+    background-color: #1fd5f1;
+    color: rgb(240, 237, 237);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.7s;
+}
+.form-container form button:hover {
+    background-color: #060708;
+}
+/* Base Styles */
+.form-container {
+  position: relative;
+  border-radius: 30px;
+  width: 300px;
+  margin: 10px auto;
+  padding: 30px;
+  overflow: hidden; /* Optional: Prevent content from overflowing */
+  background-color: transparent;
+  font-size: 20px;
+  height: auto; /* Allow height to adjust based on content */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Optional: Add shadow for better visibility */
+}
+
+  
+  .form {
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background: #f4f4f4;
+    border: 1px solid #161616;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 1s ease-in-out;
+  }
+  
+  /* Active State */
+  .form.active {
+    animation: slide-in 1s ease forwards;
+    z-index: 1;
+    opacity: 1;
+  }
+  
+  /* Exit State */
+  .form.exiting {
+    animation: slide-out 0.5s ease forwards;
+    z-index: 0;
+  }
+  
+  /* Keyframes */
+  @keyframes slide-in {
+    from {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-out {
+    from {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  header img {
+    height: 80px;
+    /* Adjust logo size */
+}
+nav a:hover{
+  color: rgb(255, 255, 255);
+}
+header img{
+  border: 2px solid white;
+  border-radius: 95%;
+  text-indent: -25px;
+}
+nav a{
+      font-size: 15px;
+    }
+  h1{
+      font-size: 58px;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-indent: -90%;
+    }
+    #foot{
+        background-color: white;
+        padding-top: 60%;
+        margin-top: 60%;
+    }
+    main {
+      background-image: url('image (7).png');
+      background-size: contain;
+      background-size: 1500px; /* Ensures the image covers the entire area */
+      background-position: center; /* Centers the image */
+      background-repeat: no-repeat; /* Prevents tiling of the image */
+      height: 90vh; /* Makes the main section take up the full viewport height */
+      width: 100%; /* Ensures it spans the entire width */
+      display: flex;
+      flex-direction: column;
+      justify-content: center; /* Centers the content vertically */
+      margin-right: 0px;
+      padding: 40px;
+      box-sizing: border-box;
+  }
+  footer{
+    background-color: #308ade;
+    color: rgb(0, 0, 0);
+  }
+  .log{
+    color: white;
+  }
+  input {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid rgba(9, 9, 9, 0.7); /* Semi-transparent border */
+    padding: 30px;
+    border-radius: 20px;
+    color: transparent; /* Ensure text is visible */
+    font-size: 16px;
+    outline: none; /* Remove default outline */
+}
+
+input::placeholder {
+    color: white /* Style the placeholder text */
+}
+
+input:focus {
+    border-color: black; /* Highlight the border on focus */
+    background-color: transparent; /* Optional: Slight background on focus */
+    color: white;
+}

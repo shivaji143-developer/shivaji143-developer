@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Master</title>
+    <link rel="stylesheet" href="Project.css">
+    <link rel="shortcut icon" href="LOGO.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="LOGO.png" alt="Budget Master Logo">
+        <big><h1 class="left">Budget Master</h1></big>
+        <nav>
+            <big><a href="#" id="login-link">Login</a></big>
+            <big><a href="#" id="signup-link">Sign up</a></big>
+        </nav>
+    </header>
+    <span>
+<main>
+ <!--  <center><h2>Welcome to Budget Master</h2></center>
+    <center><p>Manage your finances effectively and easily. Get started by logging in or signing up!</p></center>
+    <center><big>"Master Your Money, Master Your Life"</big></center>
+    <big>Take control of your finances, track expenses, set budgets, and achieve your financial goals effortlessly.</big>-->
+
+    <div id="login-form" class="form-container">
+    <form action="login.html">
+        <h2 class="log">Login</h2>
+        <label for="login"></label>
+        <input type="email" name="login" placeholder="Email" id="login" required>
+        <label for="password"></label>
+        <input type="password" name="login" placeholder="Password" id="password" required>
+        <a href="#" style="text-indent: -50%;" class="log">Forget Password?</a><br>
+        <button>Login</button>
+        <p class="log">Don't have an account &nbsp; <a href="signup.html" class="log">Sign up</a></p>
+    </div>
+
+    <div id="login-form" class="form-container">
+    <form action="login.html">
+        <h2 class="log">Login</h2>
+        <label for="login"></label>
+        <input type="email" name="login" placeholder="Old Password" id="login" required>
+        <label for="password"></label>
+        <input type="password" name="login" placeholder="New Password" id="password" required>
+        <button>Reset</button>
+        <p class="log">Don't have an account &nbsp; <a href="signup.html">Sign up</a></p>
+    </div>
+
+    <div id="signup-form" class="form-container">
+    </form>
+    <form action="signup.html">
+        <h2 class="log">Sign up</h2>
+        <big><p class="log">It's free and only takes a minute</p></big>
+        <label for="name1"></label>
+        <input type="text" name="login1" placeholder="Name" id="name1" required>
+        <label for="login1"></label>
+        <input type="email" name="login1" placeholder="Email" id="login1" required>
+        <label for="password1"></label>
+        <input type="password" name="login1" placeholder="Password" id="password1" required>
+        <button>Sign up</button>
+        <p class="log">Already have an account  &nbsp; <a href="login.html" class="log">Login</a></p>
+    </form>
+    </div>    
+</main>
+
+<footer>
+  <center><footer class="log">
+    <div class="mt-3">Copyright © 2024-2025 WEBFer S.R.L. - All rights reserved</div>
+    <div class="mt-1">Terms of Service | Privacy Policy | Manage Cookies</div>
+  </footer></center>
+  <div id="loadedHeadFiles"></div>
+</footer>
+<script src="Project.js"></script>
+</body>
+</html>
